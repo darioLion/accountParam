@@ -1,7 +1,8 @@
 # angbase
 
 To run the project use
-'gulp serve'
+`gulp serve`
+
 
 To run tests
-'karma start karma.conf.js'
+`karma start karma.conf.js`
