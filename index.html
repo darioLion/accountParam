@@ -1,17 +1,30 @@
 <!DOCTYPE html>
-<html lang="en" ng-app>
-  <head>
+<html lang="en" ng-app="appAng">
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bower_components/materialize/dist/css/materialize.min.css">
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/angular/angular.min.js"></script>
-    <title>Ciclum test</title>
-  </head>
-  <body>
-  dgdfg
- <p>Enter your Name: <input type = "text" ng-model = "name"></p>
-         <p>Hello <span ng-bind = "name"></span>!</p>
-  
-  </body>
+    <script src="app/dist/src/js/angular-script.js"></script>
+    <script src="bower_components/materialize/dist/js/materialize.min.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/ng-load/ng-load.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('select').material_select();
+        });
+    </script>
+    <title>Ciklum test</title>
+    <base href="/">
+    </head>
+<body ng-controller="mainController">
+    <div class="container">
+        <h2>Account Options</h2>
+            <div ng-view></div>
+    </div>
+</body>
+
 </html>

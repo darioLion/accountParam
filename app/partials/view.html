@@ -1,0 +1,43 @@
+<div class="row">
+ <div class="col s5">
+  <a href="/">Switch to edit mode</a>
+   <p>
+    <input type="checkbox" id="verifyEmail" ng-model="verifyEmail" disabled/>
+    <label for="verifyEmail">Verify Email</label>
+</p>
+<p>
+    <input type="checkbox" id="verifyProviderEmail" ng-model="verifyProviderEmail" disabled />
+    <label for="verifyProviderEmail">Verify Provider Email</label>
+</p>
+<p>
+    <input type="checkbox" id="allowUnverifiedLogin" ng-model="allowUnverifiedLogin" disabled  />
+    <label for="allowUnverifiedLogin">Allow Unverified Login</label>
+</p>
+<p>
+    <input type="checkbox" id="preventLoginIDHarvesting" ng-model="preventLoginIDHarvesting" disabled />
+    <label for="preventLoginIDHarvesting">Prevent Login ID Harvesting</label>
+</p>
+<p>
+    <input type="checkbox" id="sendWelcomeEmail" ng-model="sendWelcomeEmail" disabled />
+    <label for="sendWelcomeEmail">Send Welcome Email</label>
+</p>
+<p>
+    <input type="checkbox" id="sendAccountDeletedEmail" ng-model="sendAccountDeletedEmail" disabled />
+    <label for="sendAccountDeletedEmail">Send Account Deleted Email</label>
+</p>
+<p>
+    <label for="defaultLanguage">Default Language</label>
+    <input type="text" id="defaultLanguage" ng-model="defaultLanguage" disabled />
+</p>
+<p>
+    <label>Login Identifier Conflict</label>
+    <select class="browser-default" ng-model="loginIdentifierConflict" disabled >
+        <option ng-repeat="conflict in select" value="{{conflict.mode}}">{{conflict.mode}}</option>
+    </select>
+</p>
+<p>
+    <label for="loginIdentifiers">Login Identifiers</label>
+    <input type="text" id="loginIdentifiers" ng-model="loginIdentifiers" disabled  />
+</p>
+</div>
+</div>

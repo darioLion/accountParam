@@ -1,0 +1,44 @@
+<div class="row">
+ <div class="col s5">
+  <a href="/readonly">Switch to readonly mode</a>
+   <p>
+    <input type="checkbox" id="verifyEmail" ng-model="verifyEmail" ng-change="changedParam('verifyEmail',verifyEmail)" />
+    <label for="verifyEmail">Verify Email</label>
+</p>
+<p>
+    <input type="checkbox" id="verifyProviderEmail" ng-model="verifyProviderEmail" ng-change="changedParam('verifyProviderEmail',verifyProviderEmail)" />
+    <label for="verifyProviderEmail">Verify Provider Email</label>
+</p>
+<p>
+    <input type="checkbox" id="allowUnverifiedLogin" ng-model="allowUnverifiedLogin" ng-change="changedParam('allowUnverifiedLogin',allowUnverifiedLogin)" />
+    <label for="allowUnverifiedLogin">Allow Unverified Login</label>
+</p>
+<p>
+    <input type="checkbox" id="preventLoginIDHarvesting" ng-model="preventLoginIDHarvesting" ng-change="changedParam('preventLoginIDHarvesting',preventLoginIDHarvesting)" />
+    <label for="preventLoginIDHarvesting">Prevent Login ID Harvesting</label>
+</p>
+<p>
+    <input type="checkbox" id="sendWelcomeEmail" ng-model="sendWelcomeEmail" ng-change="changedParam('sendWelcomeEmail',sendWelcomeEmail)" />
+    <label for="sendWelcomeEmail">Send Welcome Email</label>
+</p>
+<p>
+    <input type="checkbox" id="sendAccountDeletedEmail" ng-model="sendAccountDeletedEmail" ng-change="changedParam('sendAccountDeletedEmail', sendAccountDeletedEmail)" />
+    <label for="sendAccountDeletedEmail">Send Account Deleted Email</label>
+</p>
+<p>
+    <label for="defaultLanguage">Default Language</label>
+    <input type="text" id="defaultLanguage" ng-model="defaultLanguage" ng-change="changedParam('defaultLanguage',defaultLanguage)" />
+</p>
+<p>
+    <label>Login Identifier Conflict</label>
+    <select class="browser-default" ng-model="loginIdentifierConflict" ng-change="changedParam('loginIdentifierConflict',loginIdentifierConflict)">
+        <option ng-repeat="conflict in select" value="{{conflict.mode}}">{{conflict.mode}}</option>
+    </select>
+</p>
+<p>
+    <label for="loginIdentifiers">Login Identifiers</label>
+    <input type="text" id="loginIdentifiers" ng-model="loginIdentifiers" ng-change="changedParam('loginIdentifiers',loginIdentifiers)"  />
+</p>
+
+<a class="waves-effect waves-light btn" ng-click="saveAccountOptions()">Save</a>
+    </div></div>
